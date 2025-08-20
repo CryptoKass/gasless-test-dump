@@ -3,6 +3,8 @@ import { createNewPackage, ethersGasStationContract, getDAOAddress } from "./lib
 
 
 const main = async () => {
+  console.log("\n\n[Setting up gasless]\n\n");
+
   const provider = new ethers.JsonRpcProvider(process.env.RPC_URL);
   const daoWallet = new ethers.Wallet(
     "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",

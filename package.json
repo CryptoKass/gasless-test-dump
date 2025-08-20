@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "demo": "tsx src/gasless_setup.ts && tsx src/gasless_demo.ts",
+    "demo": "tsx src/gasless_setup.ts && tsx src/gasless_purchase.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
