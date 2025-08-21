@@ -37,7 +37,7 @@ const main = async () => {
   const contractInfo = await getContractInfo(provider, exampleContractAddress);
   console.log(`Contract Info: ${formatJSON(contractInfo)}`);
 
-   await setSingleUse(bob, exampleContractAddress, false);
+  await setSingleUse(bob, exampleContractAddress, false);
   await setWhitelist(bob, exampleContractAddress, false);
 
 
@@ -55,6 +55,8 @@ const main = async () => {
   const postUseContractInfo = await getContractInfo(provider, exampleContractAddress);
   console.log(`Contract Info after use: ${formatJSON(postUseContractInfo)}`);
   console.log(`\n\nContract Credits used: ${contractInfo.credits - postUseContractInfo.credits}`);
+
+  console.log("Gasless contract address: ", exampleContractAddress);
 };
 
 main().catch(console.error);
