@@ -22,4 +22,5 @@ npm install -g tsx
 
 RPC_URL="http://127.0.0.1:8545" tsx ./src/gasless_setup.ts   
 RPC_URL="http://127.0.0.1:8545" tsx ./src/gasless_purchase.ts   
+CONTRACT="0x..." RPC_URL="http://127.0.0.1:8545" tsx ./src/gasless_send.ts
 ```
